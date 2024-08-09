@@ -1,6 +1,6 @@
 # Personal Portfolio - Web Developer & UI Designer
 
-![Portfolio Screenshot](./screenshot/screenshot.png)
+![Portfolio Screenshot](./scrennshot/screenshot.png)
 
 A responsive personal portfolio website showcasing my skills as a web developer and UI designer, featuring a space-inspired design.
 
