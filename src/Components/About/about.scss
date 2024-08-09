@@ -1,0 +1,104 @@
+@import "../../App.scss";
+
+.aboutme {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #1c1c41;
+    background-image: url("/public/stars.png");
+
+  
+    .content-wrapper {
+      display: flex;
+      width: 80%;
+      max-width: 1200px;
+      gap: 50px;
+      align-items: center;
+
+      @include mobile {
+        flex-direction: column;
+        width: 90%;
+    }
+  
+      .imageContainer {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+  
+        img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+          @include mobile {
+            max-width: 80%;
+            margin-left: 35px;
+            margin-top: 100px;
+
+        }
+        }
+      }
+  
+      .textContainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-self: center;
+
+        @include mobile {
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+
+        }
+  
+        h1 {
+          font-size: 55px;
+          color: orange;
+
+          @include mobile {
+            font-size: 45px;
+   
+           }
+        }
+  
+        p {
+          font-size: 18px;
+          color: white;
+          line-height: 1.6;
+
+          @include mobile {
+            font-size: 12px;
+   
+           }
+        }
+  
+        button {
+          width: fit-content;
+          padding: 10px 20px;
+          background-color: #0077b5;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          font-size: 16px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          @include mobile {
+            font-size: 12px;
+   
+           }
+  
+          &:hover {
+            background-color: #005f8d;
+          }
+        }
+      }
+    }
+  }
+  

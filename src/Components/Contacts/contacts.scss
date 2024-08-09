@@ -1,0 +1,151 @@
+@import "../../App.scss";
+
+
+.contact {
+    max-width: 1350px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 320px;
+
+    @include mobile{
+      width: 100%;
+      padding: 10px;
+      flex-direction: column;
+
+   }
+  
+    .content-wrapper {
+      display: flex;
+      align-items: flex-start;
+      gap: 50px;
+
+      @include mobile{
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+     }
+
+    }
+  
+    .textContainer {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      @include mobile{
+        gap: 20px;
+        text-align: center;
+        align-items: center;
+        margin-top: 70px;
+  
+     }
+  
+      h1 {
+        font-size: 100px;
+        line-height: 90px;
+
+        @include mobile{
+          font-size: 30px;
+          color: orange;
+    
+       }
+      }
+  
+      span {
+        font-weight: 300;
+        
+      }
+    }
+  
+    .formContainer {
+      flex: 1;
+      position: relative;
+      margin-top: 50px;
+
+      @include mobile{
+
+       width: 100%;
+       padding: 10px;
+  
+     }
+  
+      form {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+        input, textarea {
+          padding: 15px;
+          color: rgba(255, 255, 255, 1);
+          background-color: transparent;
+          font-size: 15px;
+          outline: none;
+          border-radius: 10px;
+          border: 1px solid rgba(255, 255, 255, 0.5);
+  
+          &::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 15px;
+          }
+
+          @include mobile{
+          padding: 10px;
+          color: rgba(255, 255, 255, 1);
+          background-color: transparent;
+          font-size: 10px;
+          outline: none;
+          border-radius: 10px;
+          border: 1px solid rgba(255, 255, 255, 0.5);
+  
+          &::placeholder {
+            font-size: 10px;
+          }
+          }
+        }
+  
+        button {
+          padding: 15px;
+          border: none;
+          background-color: orange;
+          cursor: pointer;
+          border-radius: 15px;
+          font-size: 20px;
+
+          @include mobile{
+
+            padding: 10px;
+            border: none;
+            font-size: 15px;
+
+         }
+        }
+      }
+    }
+  
+    .copyright {
+      width: 100%;
+      text-align: center;
+      padding-top: 20px;
+      margin-bottom: 20px;
+
+      hr {
+        margin-bottom: 10px;
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+      }
+  
+      p {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.7);
+
+        @include mobile{
+          font-size: 10px;
+       }
+      }
+    }
+  }
